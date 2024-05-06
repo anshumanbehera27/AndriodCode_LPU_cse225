@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_seating"
+        android:orderInCategory="3"
+        android:title="seeting"
+        android:icon="@color/black"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="2"
+        android:title="about"
+        android:icon="@color/black"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="1"
+        android:title="search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_like"
+        android:orderInCategory="4"
+        android:title="like"
+        android:icon="@color/black"
+        app:showAsAction="never"/>
+
+
+
+</menu>

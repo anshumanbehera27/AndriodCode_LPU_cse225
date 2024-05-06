@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/menu_notification"
+        android:title="Notification"
+        android:icon="@drawable/notification"
+        app:showAsAction="always"
+        />
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/search"
+        />
+
+    <item android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/user"
+        />
+</menu>
