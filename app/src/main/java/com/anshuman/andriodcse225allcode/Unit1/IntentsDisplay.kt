@@ -1,5 +1,6 @@
 package com.anshuman.andriodcse225allcode.Unit1
 
+import android.content.Context
 import android.os.Bundle
 import android.widget.TextView
 
@@ -16,10 +17,15 @@ class IntentsDisplay : AppCompatActivity() {
         setContentView(R.layout.activity_intents_display)
 
         val display = findViewById<TextView>(R.id.textdisplay)
+    // todo  this will done withe the help of the intent
 
-        val email =  intent.getStringExtra("email")
-        val password= intent.getStringExtra("password")
+//        val email =  intent.getStringExtra("email")
+//        val password= intent.getStringExtra("password")
 
+        // todo Retrieve email and password from SharedPreferences
+        val sharedPreferences = getSharedPreferences("LoginPrefs", Context.MODE_PRIVATE)
+        val email = sharedPreferences.getString("email", "")
+        val password = sharedPreferences.getString("password", "")
 
         display.text = buildString {
             append("hey welcome to the my page :${email} \n")
