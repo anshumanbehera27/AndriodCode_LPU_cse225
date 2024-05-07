@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,35 +13,17 @@
         android:theme="@style/Theme.AndriodCse225AllCode"
         tools:targetApi="31">
         <activity
-            android:name=".Fragements.StaticFragment"
-            android:exported="false"/>
-        <activity
-            android:name=".Fragements.dataTransfer"
-            android:exported="false"/>
-        <activity
-            android:name=".unit2.notifaction"
-            android:exported="false"/>
-        <activity
-            android:name=".unit2.jobsheduler"
-            android:exported="false" />
-        <activity
-            android:name=".unit2.Alarammanager"
-            android:exported="true" />
-        <activity
-            android:name=".unit2.DataAndTimePicker"
-            android:exported="false" />
-        <activity
-            android:name=".unit2.Activity_toast"
-            android:exported="false" />
-        <activity
-            android:name=".deatils_page"
-            android:exported="false" />
-        <activity
-            android:name=".Unit1.ScrollView"
-            android:exported="false" />
+            android:name=".Storage.Internal_Storage"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Unit1.progressBar"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".Unit1.RatingBar"
             android:exported="false" />
@@ -62,13 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".Unit1.splashScreen"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".Unit1.Intents"
             android:exported="false" />
