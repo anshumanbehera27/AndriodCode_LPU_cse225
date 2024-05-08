@@ -62,5 +62,6 @@ class Intents : AppCompatActivity() {
         editor.putString("email", email)
         editor.putString("password", password)
         editor.apply()
+
     }
 }

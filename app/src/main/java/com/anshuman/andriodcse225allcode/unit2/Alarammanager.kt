@@ -54,7 +54,6 @@ class Alarammanager : AppCompatActivity() {
             intent,
             PendingIntent.FLAG_UPDATE_CURRENT
         )
-
         alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.timeInMillis, pendingIntent)
 
         Toast.makeText(

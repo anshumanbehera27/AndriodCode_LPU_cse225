@@ -44,8 +44,8 @@ class implicitIntent : AppCompatActivity() {
 
         // open camera
         btn1.setOnClickListener {
-            val camera_intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-            startActivity(camera_intent)
+                val camera_intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                startActivity(camera_intent)
         }
 
         btn2.setOnClickListener {

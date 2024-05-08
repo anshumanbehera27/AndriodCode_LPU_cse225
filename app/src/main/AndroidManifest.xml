@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +16,7 @@
         android:theme="@style/Theme.AndriodCse225AllCode"
         tools:targetApi="31">
         <activity
-            android:name=".Storage.Internal_Storage"
+            android:name=".videoView"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +25,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Traffic_light.Activity_traffic_light"
+            android:exported="true"/>
+        <activity
+            android:name=".project.Course_activity"
+            android:exported="true" />
+        <activity
+            android:name=".Storage.ExternalStorage"
+            android:exported="false" />
+        <activity
+            android:name=".Storage.ExternalDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Storage.Internal_Storage"
+            android:exported="false" />
+        <activity
             android:name=".Unit1.progressBar"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Unit1.RatingBar"
             android:exported="false" />
